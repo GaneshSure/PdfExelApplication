@@ -19,6 +19,7 @@ public class TestController
 	public  ModelAndView    viewPdf()
 	{
 		List  list=dao.getEmployeesList();
+		System.out.println("it is a controller class of employee");
 		return   new  ModelAndView("p", "employees", list);
 	}
 	
